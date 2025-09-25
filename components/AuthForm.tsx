@@ -66,12 +66,12 @@ const AuthForm = ({type} : { type : FormType}) => {
                 
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} 
-                      className="W-full space-y-6 mt-4 from">
+                      className="w-full space-y-6 mt-4 form">
                     {!isSignIn && <p>Name</p>}
                     <p>Email</p>
                     <p>Password</p>
                     
-                    <Button className="btn font-bold"
+                    <Button className="btn"
                             type="submit">{isSignIn ? 'Sign in' : 'Create an Account'}</Button>
                 </form>
             </Form>
